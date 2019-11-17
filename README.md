@@ -30,8 +30,19 @@ https://rasa.com/docs/rasa/user-guide/running-the-server/
 $ rasa run -m models --enable-api --log-file out.log -p 5002
 Starting Rasa server on http://localhost:5002
 
-curl -XPOST localhost:5002/parse -d '{"q":"I am looking for Chinese food"}
+Specific endpoints
+$ rasa run -m models --enable-api --log-file out.log -p 5002 --endpoints endpoints.yml
 
-curl -XPOST http://localhost:5002/webhooks/myio/webhook \
--d '{"sender": "user1", "message": "hello"}' \
+Start server + Fix No 'Access-Control-Allow-Origin'
+$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*"
+$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*" --debug
+
+
+
+webhook
+
+curl -XPOST localhost:5005/webhooks/rest/webhook -d '{"sender":"Me","message":"how are you?"}'
+
+curl -XPOST localhost:5005/webhooks/rest/webhook \
+-d '{"sender":"Me","message":"how are you?"}' \
 -H "Content-type: application/json"
