@@ -6,6 +6,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - want_main_menu
+  - select_menu
 
 actions:
 - utter_greet
@@ -14,6 +16,8 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_iamabot
+- utter_show_main_menu
+- utter_confirm_main_menu
 
 templates:
   utter_greet:
@@ -34,3 +38,18 @@ templates:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_show_main_menu:
+  - text: "What can I help you?"
+    buttons:
+    - title: "Current campaign"
+      payload: "/select_menu"
+    - title: "Packs detail"
+      payload: "/select_menu"
+    - title: "Report problem"
+      payload: "/select_menu"
+    - title: "Talk with agent"
+      payload: "/select_menu"
+
+  utter_confirm_main_menu:
+  - text: "You have selected some menu!"

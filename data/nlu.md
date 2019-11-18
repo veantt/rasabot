@@ -1,3 +1,6 @@
+## intent:want_main_menu
+- what you can do
+
 ## intent:greet
 - hey
 - hello
