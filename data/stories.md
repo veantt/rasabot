@@ -31,6 +31,14 @@
   - utter_iamabot
 
 ## User want to see main menu
+* greet
+  - utter_greet
+* want_main_menu
+  - utter_show_main_menu
+* select_menu
+  - utter_confirm_main_menu
+
+## Just want to see main menu
 * want_main_menu
   - utter_show_main_menu
 * select_menu
