@@ -1,55 +1,64 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - want_main_menu
-  - select_menu
+  - i_greet
+  - i_inquiry_hat_cha_laung_game_info
+  - i_inquiry_hat_cha_laung_game_rule
+  - i_inquiry_hat_cha_laung_game_prize
+  - i_inquiry_hat_cha_laung_winner_list
+  - i_inquiry_hat_cha_laung_period
+  - i_inquiry_hat_cha_laung_location
+  - i_inquiry_hat_cha_laung_join_instant_win
+  - i_inquiry_hat_cha_laung_join_mega_win
+  - i_inquiry_hat_cha_laung_what_instant_prize
+  - i_inquiry_hat_cha_laung_what_mega_prize
+  - i_download_hat_cha_laung
+  - i_download_hat_cha_laung_playstore
+  - i_download_hat_cha_laung_itunes
+  - i_download_hat_cha_laung_direct
+  - i_download_hat_cha_laung_sms
+  - i_download_hat_cha_laung_ussd
+  - i_download_hat_cha_laung_qr
+  - i_bot_challenge
+  - i_not_satisfy_with_bot
+  - i_request_human_agent
 
 actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_iamabot
-- utter_show_main_menu
-- utter_confirm_main_menu
+  - utter_menu_scope_of_services
+  - utter_menu_game_hcl_info
+  - utter_menu_more_game_hcl_info
+  - utter_menu_game_hcl_rules
+  - utter_menu_more_game_hcl_rules
+  - utter_menu_game_hcl_prizes
+  - utter_menu_more_game_hcl_prizes
+  - utter_menu_more_game_hcl_winner
+  - utter_menu_game_hcl_download
+  - utter_greet
+  - utter_introduce_myself
 
 templates:
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_introduce_myself:
+  - text: "I'm Hat Cha Laung helper."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-  utter_show_main_menu:
-  - text: "What can I help you?"
+  utter_menu_scope_of_services:
+  - text: "Please ask your questions or select from topics below:"
     buttons:
-    - title: "Current campaign"
-      payload: "/select_menu"
-    - title: "Packs detail"
-      payload: "/select_menu"
-    - title: "Report problem"
-      payload: "/select_menu"
-    - title: "Talk with agent"
-      payload: "/select_menu"
+    - text: "Game info"
+      payload: "/i_inquiry_hat_cha_laung_game_info"
+    - text: "Game rules"
+      payload: "/i_inquiry_hat_cha_laung_game_rule"
+    - text: "Game prizes"
+      payload: "/i_inquiry_hat_cha_laung_game_prize"
+    - text: "Winner list"
+      payload: "/i_inquiry_hat_cha_laung_winner_list"
 
-  utter_confirm_main_menu:
-  - text: "You have selected some menu!"
+  utter_menu_game_hcl_info:
+  - text: "Hat Cha Laung info:"
+    buttons:
+    - text: "Campaign period"
+      payload: "/i_inquiry_hat_cha_laung_period"
+    - text: "Where to play"
+      payload: "/i_inquiry_hat_cha_laung_location"
+    - text: "Something else?"
+      payload: "/i_want_more_game_hcl_info"

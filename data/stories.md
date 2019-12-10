@@ -1,45 +1,13 @@
 ## happy path
-* greet
+* i_greet
   - utter_greet
-* mood_great
-  - utter_happy
+  - utter_introduce_myself
+  - utter_menu_scope_of_services
 
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
+## Game info
+* i_inquiry_hat_cha_laung_game_info
+  - utter_menu_game_hcl_info
 
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
-
-## say goodbye
-* goodbye
-  - utter_goodbye
-
-## bot challenge
-* bot_challenge
-  - utter_iamabot
-
-## User want to see main menu
-* greet
-  - utter_greet
-* want_main_menu
-  - utter_show_main_menu
-* select_menu
-  - utter_confirm_main_menu
-
-## Just want to see main menu
-* want_main_menu
-  - utter_show_main_menu
-* select_menu
-  - utter_confirm_main_menu
+## More Game info
+* i_want_more_game_hcl_info
+  - utter_menu_more_game_hcl_info
