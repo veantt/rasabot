@@ -167,3 +167,9 @@
   - yes change to human
   - yes change to agent
   - yes confirm
+
+## intent: i_test_menu
+  - test menu
+  - test show menu
+  - test only menu
+  - menu test

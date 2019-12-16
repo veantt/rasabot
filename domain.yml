@@ -20,6 +20,7 @@ intents:
   - i_bot_challenge
   - i_not_satisfy_with_bot
   - i_request_human_agent
+  - i_test_menu
 
 actions:
   - utter_menu_scope_of_services
@@ -33,32 +34,53 @@ actions:
   - utter_menu_game_hcl_download
   - utter_greet
   - utter_introduce_myself
+  - utter_confuse
+  - utter_sorry_cant_help
+  - utter_menu_to_human
+  - utter_redirect_to_human
 
 templates:
   utter_greet:
   - text: "Hey! How are you?"
 
+  utter_confuse:
+  - text: "WTF!"
+
   utter_introduce_myself:
   - text: "I'm Hat Cha Laung helper."
+
+  utter_sorry_cant_help:
+  - text: "Sorry i couldn't be more helpful :("
+
+  utter_redirect_to_human:
+  - text: "Please wait, Human agent will contact you"
 
   utter_menu_scope_of_services:
   - text: "Please ask your questions or select from topics below:"
     buttons:
-    - text: "Game info"
+    - title: "Game info"
       payload: "/i_inquiry_hat_cha_laung_game_info"
-    - text: "Game rules"
+    - title: "Game rules"
       payload: "/i_inquiry_hat_cha_laung_game_rule"
-    - text: "Game prizes"
+    - title: "Game prizes"
       payload: "/i_inquiry_hat_cha_laung_game_prize"
-    - text: "Winner list"
+    - title: "Winner list"
       payload: "/i_inquiry_hat_cha_laung_winner_list"
 
   utter_menu_game_hcl_info:
   - text: "Hat Cha Laung info:"
     buttons:
-    - text: "Campaign period"
+    - title: "Campaign period"
       payload: "/i_inquiry_hat_cha_laung_period"
-    - text: "Where to play"
+    - title: "Where to play"
       payload: "/i_inquiry_hat_cha_laung_location"
-    - text: "Something else?"
+    - title: "Something else?"
       payload: "/i_want_more_game_hcl_info"
+
+  utter_menu_to_human:
+  - text: "Do you want to switch to human agent?"
+    buttons:
+    - title: "Yes"
+      payload: "/i_request_human_agent"
+    - title: "No"
+      payload: "/i_greet"

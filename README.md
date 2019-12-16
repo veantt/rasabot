@@ -27,15 +27,17 @@ $ rasa shell --debug
 Start server
 https://rasa.com/docs/rasa/user-guide/running-the-server/
 
+# Start server + Fix No 'Access-Control-Allow-Origin'
+$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*"
+$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*" --debug
+
 $ rasa run -m models --enable-api --log-file out.log -p 5002
 Starting Rasa server on http://localhost:5002
 
 Specific endpoints
 $ rasa run -m models --enable-api --log-file out.log -p 5002 --endpoints endpoints.yml
 
-Start server + Fix No 'Access-Control-Allow-Origin'
-$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*"
-$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*" --debug
+
 
 
 
