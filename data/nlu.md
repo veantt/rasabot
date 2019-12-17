@@ -42,6 +42,7 @@
 
 ## intent: i_inquiry_hat_cha_laung_period
   - hat cha laung period
+  - hat cha laung time
   - when i can play the game
   - how long is hat cha laung
   - when hat cha laung start

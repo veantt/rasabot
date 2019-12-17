@@ -12,6 +12,16 @@
 * i_want_more_game_hcl_info
   - utter_menu_more_game_hcl_info
 
+## Game period
+* i_inquiry_hat_cha_laung_period
+  - utter_game_hcl_period_detail
+
+
+## Game location
+* i_inquiry_hat_cha_laung_location
+  - utter_game_hcl_location_detail
+
+
 ## Challenge bot
 * i_bot_challenge
   - utter_introduce_myself

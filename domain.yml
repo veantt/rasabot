@@ -38,6 +38,8 @@ actions:
   - utter_sorry_cant_help
   - utter_menu_to_human
   - utter_redirect_to_human
+  - utter_game_hcl_period_detail
+  - utter_game_hcl_location_detail
 
 templates:
   utter_greet:
@@ -54,6 +56,22 @@ templates:
 
   utter_redirect_to_human:
   - text: "Please wait, Human agent will contact you"
+
+  utter_game_hcl_period_detail:
+  - text: "Campaign will start from 22nd Nov and will run for 70 days."
+    buttons:
+    - title: "Where to play"
+      payload: "/i_inquiry_hat_cha_laung_location"
+    - title: "Something else?"
+      payload: "/i_want_more_game_hcl_info"
+
+  utter_game_hcl_location_detail:
+  - text: "Hat Cha Laung lucky draw will be available exclusively on MyTelenor App (version 3.11)"
+    buttons:
+    - title: "Campaign period"
+      payload: "/i_inquiry_hat_cha_laung_period"
+    - title: "Something else?"
+      payload: "/i_want_more_game_hcl_info"
 
   utter_menu_scope_of_services:
   - text: "Please ask your questions or select from topics below:"
@@ -76,6 +94,16 @@ templates:
       payload: "/i_inquiry_hat_cha_laung_location"
     - title: "Something else?"
       payload: "/i_want_more_game_hcl_info"
+
+  utter_menu_more_game_hcl_info:
+  - text: "Do you want to know more?"
+    buttons:
+    - text: "Download and play"
+      payload: "/i_download_hat_cha_laung"
+    - text: "Game rules"
+      payload: "/i_inquiry_hat_cha_laung_game_rule"
+    - text: "Game prizes"
+      payload: "/i_inquiry_hat_cha_laung_game_prize"
 
   utter_menu_to_human:
   - text: "Do you want to switch to human agent?"
