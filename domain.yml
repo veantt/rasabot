@@ -21,6 +21,7 @@ intents:
   - i_not_satisfy_with_bot
   - i_request_human_agent
   - i_test_menu
+  - i_want_more_game_hcl_info
 
 actions:
   - utter_menu_scope_of_services
@@ -40,6 +41,12 @@ actions:
   - utter_redirect_to_human
   - utter_game_hcl_period_detail
   - utter_game_hcl_location_detail
+  - utter_download_hcl_playstore
+  - utter_download_hcl_itunes
+  - utter_download_hcl_direct
+  - utter_download_hcl_sms
+  - utter_download_hcl_ussd
+  - utter_download_hcl_qr
 
 templates:
   utter_greet:
@@ -98,11 +105,11 @@ templates:
   utter_menu_more_game_hcl_info:
   - text: "Do you want to know more?"
     buttons:
-    - text: "Download and play"
+    - title: "Download and play"
       payload: "/i_download_hat_cha_laung"
-    - text: "Game rules"
+    - title: "Game rules"
       payload: "/i_inquiry_hat_cha_laung_game_rule"
-    - text: "Game prizes"
+    - title: "Game prizes"
       payload: "/i_inquiry_hat_cha_laung_game_prize"
 
   utter_menu_to_human:
@@ -112,3 +119,37 @@ templates:
       payload: "/i_request_human_agent"
     - title: "No"
       payload: "/i_greet"
+
+  utter_menu_game_hcl_download:
+  - text: "Download and play Hat Cha Laung"
+    buttons:
+    - title: "Play Store"
+      payload: "/i_download_hat_cha_laung_playstore"
+    - title: "iTunes"
+      payload: "/i_download_hat_cha_laung_itunes"
+    - title: "Telenor website"
+      payload: "/i_download_hat_cha_laung_direct"
+    - title: "SMS"
+      payload: "/i_download_hat_cha_laung_sms"
+    - title: "USSD"
+      payload: "/i_download_hat_cha_laung_ussd"
+    - title: "QR code"
+      payload: "/i_download_hat_cha_laung_qr"
+
+  utter_download_hcl_playstore:
+  - text: "Google Play Store http://bit.ly/newmytelenor"
+
+  utter_download_hcl_itunes:
+  - text: "iTunes store http://bit.ly/newmytelenor"
+
+  utter_download_hcl_direct:
+  - text: "Direct download link (only for android) http://bit.ly/2AOHx2n"
+
+  utter_download_hcl_sms:
+  - text: "Send “APP” to 500 and get download link for free"
+
+  utter_download_hcl_ussd:
+  - text: "Dial *979*5*5# and get download link for free"
+
+  utter_download_hcl_qr:
+  - custom: "https://www.telenor.com.mm/sites/default/files/hachalaung-qr.png"

@@ -40,3 +40,31 @@
 ## Test only menu
 * i_test_menu
   - utter_menu_scope_of_services
+
+## Download menu
+* i_download_hat_cha_laung
+  - utter_menu_game_hcl_download
+
+## Download from playstore
+* i_download_hat_cha_laung_playstore
+  - utter_download_hcl_playstore
+
+## Download from itunes
+* i_download_hat_cha_laung_itunes
+  - utter_download_hcl_itunes
+
+## Download from direct link
+* i_download_hat_cha_laung_direct
+  - utter_download_hcl_direct
+
+## Download from sms
+* i_download_hat_cha_laung_sms
+  - utter_download_hcl_sms
+
+## Download from ussd
+* i_download_hat_cha_laung_ussd
+  - utter_download_hcl_ussd
+
+## Download from qr code
+* i_download_hat_cha_laung_qr
+  - utter_download_hcl_qr

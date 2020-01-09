@@ -41,10 +41,16 @@ $ rasa run -m models --enable-api --log-file out.log -p 5002 --endpoints endpoin
 
 
 
-webhook
+## webhook
 
-curl -XPOST localhost:5005/webhooks/rest/webhook -d '{"sender":"Me","message":"how are you?"}'
+curl -XPOST localhost:5002/webhooks/rest/webhook -d '{"sender":"Me","message":"how are you?"}'
 
-curl -XPOST localhost:5005/webhooks/rest/webhook \
+curl -XPOST localhost:5002/webhooks/rest/webhook \
 -d '{"sender":"Me","message":"how are you?"}' \
 -H "Content-type: application/json"
+
+curl -XPOST localhost:5002/webhooks/rest/webhook -d '{"sender":"Me","message":"/i_want_more_game_hcl_info"}'
+
+## Front-end
+https://rasa.com/docs/rasa/user-guide/connectors/your-own-website/
+https://github.com/botfront/rasa-webchat
