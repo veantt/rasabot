@@ -1,2 +1,7 @@
 # action_endpoint:
 #   url: http://localhost:5002/webhook
+
+event_broker:
+  type: SQL
+  dialect: sqlite
+  db: db/events.db
