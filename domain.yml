@@ -152,4 +152,8 @@ templates:
   - text: "Dial *979*5*5# and get download link for free"
 
   utter_download_hcl_qr:
-  - custom: "https://www.telenor.com.mm/sites/default/files/hachalaung-qr.png"
+  - text: "QR code:"
+    image: "https://www.telenor.com.mm/sites/default/files/hachalaung-qr.png"
+    buttons:
+    - title: "Play Store"
+      payload: "/i_download_hat_cha_laung_playstore"
