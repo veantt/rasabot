@@ -31,6 +31,9 @@ https://rasa.com/docs/rasa/user-guide/running-the-server/
 $ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*"
 $ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "*" --debug
 
+Staging server
+Prod$ rasa run -m models --enable-api --log-file out.log -p 5002 --cors "http://206.189.46.29"
+
 $ rasa run -m models --enable-api --log-file out.log -p 5002
 Starting Rasa server on http://localhost:5002
 
@@ -50,6 +53,10 @@ curl -XPOST localhost:5002/webhooks/rest/webhook \
 -H "Content-type: application/json"
 
 curl -XPOST localhost:5002/webhooks/rest/webhook -d '{"sender":"Me","message":"/i_want_more_game_hcl_info"}'
+
+curl -XPOST http://206.189.37.110:5002/webhooks/rest/webhook -d '{"sender":"Me","message":"/i_want_more_game_hcl_info"}'
+
+curl -XPOST 206.189.37.110:5002/webhooks/rest/webhook -d '{"sender":"Me","message":"how are you?"}'
 
 ## Front-end
 https://rasa.com/docs/rasa/user-guide/connectors/your-own-website/
