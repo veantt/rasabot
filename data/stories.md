@@ -34,7 +34,7 @@
 
 
 ## Switch to human agent
-* i_request_human_agent
+* i_request_live_chat
   - utter_redirect_to_human
 
 ## Test only menu

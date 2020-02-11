@@ -162,7 +162,7 @@
   - stop bot
   - you are annoying
 
-## intent: i_request_human_agent
+## intent: i_request_live_chat
   - yes switch to human
   - yes switch to agent
   - yes change to human

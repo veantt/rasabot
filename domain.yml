@@ -19,7 +19,7 @@ intents:
   - i_download_hat_cha_laung_qr
   - i_bot_challenge
   - i_not_satisfy_with_bot
-  - i_request_human_agent
+  - i_request_live_chat
   - i_test_menu
   - i_want_more_game_hcl_info
 
@@ -113,10 +113,11 @@ templates:
       payload: "/i_inquiry_hat_cha_laung_game_prize"
 
   utter_menu_to_human:
-  - text: "Do you want to switch to human agent?"
+  - text: "Please click button below to switch to Live Chat"
+    image: "./image/live-chat-icon-small.png"
     buttons:
-    - title: "Yes"
-      payload: "/i_request_human_agent"
+    - title: "Switch to Live Chat"
+      payload: "/i_request_live_chat"
     - title: "No"
       payload: "/i_greet"
 
