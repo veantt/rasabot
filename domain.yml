@@ -150,7 +150,13 @@ templates:
   - text: "Send “APP” to 500 and get download link for free"
 
   utter_download_hcl_ussd:
-  - text: "Dial *979*5*5# and get download link for free"
+  - custom:
+      - text: "Dial *979*5*5# and get download link for free"
+      - text: "*979*5*5#"
+        type: "tel"
+      - text: "Check balance"
+      - text: "*124#"
+        type: "tel"
 
   utter_download_hcl_qr:
   - text: "QR code:"

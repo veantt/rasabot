@@ -131,6 +131,7 @@
   - install hat cha laung from ussd
   - download mytelenor from ussd
   - install mytelenor from ussd
+  - ussd
 
 ## intent: i_download_hat_cha_laung_qr
   - download hat cha laung from qr code
