@@ -144,7 +144,10 @@ templates:
   - text: "iTunes store http://bit.ly/newmytelenor"
 
   utter_download_hcl_direct:
-  - text: "Direct download link (only for android) http://bit.ly/2AOHx2n"
+  - custom:
+      - text: "Direct download link (only for android)"
+      - text: "http://bit.ly/2AOHx2n"
+        type: "url"
 
   utter_download_hcl_sms:
   - text: "Send “APP” to 500 and get download link for free"
