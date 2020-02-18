@@ -47,8 +47,18 @@ actions:
   - utter_download_hcl_sms
   - utter_download_hcl_ussd
   - utter_download_hcl_qr
+  - utter_default
 
 templates:
+  utter_default:
+  - text: "Sorry I don't understand. Do you want to talk to agant?"
+    image: "./image/live-chat-icon-small.png"
+    buttons:
+    - title: "Switch to Live Chat"
+      payload: "/i_request_live_chat"
+    - title: "No"
+      payload: "/i_greet"
+
   utter_greet:
   - text: "Hey! How are you?"
 
