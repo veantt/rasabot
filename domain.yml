@@ -58,6 +58,10 @@ templates:
       payload: "/i_request_live_chat"
     - title: "No"
       payload: "/i_greet"
+    custom:
+      - text: "bot_fail_to_understand"
+        type: "ga_event"
+
 
   utter_greet:
   - text: "Hey! How are you?"
