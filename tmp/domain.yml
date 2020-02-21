@@ -1,0 +1,183 @@
+intents:
+  - i_greet
+  - i_inquiry_hat_cha_laung_game_info
+  - i_inquiry_hat_cha_laung_game_rule
+  - i_inquiry_hat_cha_laung_game_prize
+  - i_inquiry_hat_cha_laung_winner_list
+  - i_inquiry_hat_cha_laung_period
+  - i_inquiry_hat_cha_laung_location
+  - i_inquiry_hat_cha_laung_join_instant_win
+  - i_inquiry_hat_cha_laung_join_mega_win
+  - i_inquiry_hat_cha_laung_what_instant_prize
+  - i_inquiry_hat_cha_laung_what_mega_prize
+  - i_download_hat_cha_laung
+  - i_download_hat_cha_laung_playstore
+  - i_download_hat_cha_laung_itunes
+  - i_download_hat_cha_laung_direct
+  - i_download_hat_cha_laung_sms
+  - i_download_hat_cha_laung_ussd
+  - i_download_hat_cha_laung_qr
+  - i_bot_challenge
+  - i_not_satisfy_with_bot
+  - i_request_live_chat
+  - i_test_menu
+  - i_want_more_game_hcl_info
+
+actions:
+  - utter_menu_scope_of_services
+  - utter_menu_game_hcl_info
+  - utter_menu_more_game_hcl_info
+  - utter_menu_game_hcl_rules
+  - utter_menu_more_game_hcl_rules
+  - utter_menu_game_hcl_prizes
+  - utter_menu_more_game_hcl_prizes
+  - utter_menu_more_game_hcl_winner
+  - utter_menu_game_hcl_download
+  - utter_greet
+  - utter_introduce_myself
+  - utter_confuse
+  - utter_sorry_cant_help
+  - utter_menu_to_human
+  - utter_redirect_to_human
+  - utter_game_hcl_period_detail
+  - utter_game_hcl_location_detail
+  - utter_download_hcl_playstore
+  - utter_download_hcl_itunes
+  - utter_download_hcl_direct
+  - utter_download_hcl_sms
+  - utter_download_hcl_ussd
+  - utter_download_hcl_qr
+  - utter_default
+
+templates:
+  utter_default:
+  - text: "Sorry I don't understand. Do you want to talk to agant?"
+    image: "./image/live-chat-icon-small.png"
+    buttons:
+    - title: "Switch to Live Chat"
+      payload: "/i_request_live_chat"
+    - title: "No"
+      payload: "/i_greet"
+    custom:
+      - text: "bot_fail_to_understand"
+        type: "ga_event"
+
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_confuse:
+  - text: "WTF!"
+
+  utter_introduce_myself:
+  - text: "I'm Hat Cha Laung helper."
+
+  utter_sorry_cant_help:
+  - text: "Sorry i couldn't be more helpful :("
+
+  utter_redirect_to_human:
+  - text: "Please wait, Human agent will contact you"
+
+  utter_game_hcl_period_detail:
+  - text: "Campaign will start from 22nd Nov and will run for 70 days."
+    buttons:
+    - title: "Where to play"
+      payload: "/i_inquiry_hat_cha_laung_location"
+    - title: "Something else?"
+      payload: "/i_want_more_game_hcl_info"
+
+  utter_game_hcl_location_detail:
+  - text: "Hat Cha Laung lucky draw will be available exclusively on MyTelenor App (version 3.11)"
+    buttons:
+    - title: "Campaign period"
+      payload: "/i_inquiry_hat_cha_laung_period"
+    - title: "Something else?"
+      payload: "/i_want_more_game_hcl_info"
+
+  utter_menu_scope_of_services:
+  - text: "Please ask your questions or select from topics below:"
+    buttons:
+    - title: "Game info"
+      payload: "/i_inquiry_hat_cha_laung_game_info"
+    - title: "Game rules"
+      payload: "/i_inquiry_hat_cha_laung_game_rule"
+    - title: "Game prizes"
+      payload: "/i_inquiry_hat_cha_laung_game_prize"
+    - title: "Winner list"
+      payload: "/i_inquiry_hat_cha_laung_winner_list"
+
+  utter_menu_game_hcl_info:
+  - text: "Hat Cha Laung info:"
+    buttons:
+    - title: "Campaign period"
+      payload: "/i_inquiry_hat_cha_laung_period"
+    - title: "Where to play"
+      payload: "/i_inquiry_hat_cha_laung_location"
+    - title: "Something else?"
+      payload: "/i_want_more_game_hcl_info"
+
+  utter_menu_more_game_hcl_info:
+  - text: "Do you want to know more?"
+    buttons:
+    - title: "Download and play"
+      payload: "/i_download_hat_cha_laung"
+    - title: "Game rules"
+      payload: "/i_inquiry_hat_cha_laung_game_rule"
+    - title: "Game prizes"
+      payload: "/i_inquiry_hat_cha_laung_game_prize"
+
+  utter_menu_to_human:
+  - text: "Please click button below to switch to Live Chat"
+    image: "./image/live-chat-icon-small.png"
+    buttons:
+    - title: "Switch to Live Chat"
+      payload: "/i_request_live_chat"
+    - title: "No"
+      payload: "/i_greet"
+
+  utter_menu_game_hcl_download:
+  - text: "Download and play Hat Cha Laung"
+    buttons:
+    - title: "Play Store"
+      payload: "/i_download_hat_cha_laung_playstore"
+    - title: "iTunes"
+      payload: "/i_download_hat_cha_laung_itunes"
+    - title: "Telenor website"
+      payload: "/i_download_hat_cha_laung_direct"
+    - title: "SMS"
+      payload: "/i_download_hat_cha_laung_sms"
+    - title: "USSD"
+      payload: "/i_download_hat_cha_laung_ussd"
+    - title: "QR code"
+      payload: "/i_download_hat_cha_laung_qr"
+
+  utter_download_hcl_playstore:
+  - text: "Google Play Store http://bit.ly/newmytelenor"
+
+  utter_download_hcl_itunes:
+  - text: "iTunes store http://bit.ly/newmytelenor"
+
+  utter_download_hcl_direct:
+  - custom:
+      - text: "Direct download link (only for android)"
+      - text: "http://bit.ly/2AOHx2n"
+        type: "url"
+
+  utter_download_hcl_sms:
+  - text: "Send “APP” to 500 and get download link for free"
+
+  utter_download_hcl_ussd:
+  - custom:
+      - text: "Dial *979*5*5# and get download link for free"
+      - text: "*979*5*5#"
+        type: "tel"
+      - text: "Check balance"
+      - text: "*124#"
+        type: "tel"
+
+  utter_download_hcl_qr:
+  - text: "QR code:"
+    image: "https://www.telenor.com.mm/sites/default/files/hachalaung-qr.png"
+    buttons:
+    - title: "Play Store"
+      payload: "/i_download_hat_cha_laung_playstore"
