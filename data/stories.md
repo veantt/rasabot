@@ -1,70 +1,66 @@
-## happy path
-* i_greet
-  - utter_greet
-  - utter_introduce_myself
-  - utter_menu_scope_of_services
+## Happy path
+* i_greet_en
+  - utter_welcome
+  - utter_menu_choose_language
 
-## Game info
-* i_inquiry_hat_cha_laung_game_info
-  - utter_menu_game_hcl_info
+## Choose English language
+* i_use_main_menu_en
+  - utter_menu_main_menu_en
 
-## More Game info
-* i_want_more_game_hcl_info
-  - utter_menu_more_game_hcl_info
-
-## Game period
-* i_inquiry_hat_cha_laung_period
-  - utter_game_hcl_period_detail
+## Choose menu Self-Services
+* i_inquiry_self_services_en
+  - utter_menu_self_service_en
 
 
-## Game location
-* i_inquiry_hat_cha_laung_location
-  - utter_game_hcl_location_detail
+## Choose menu Current Promotion
+* i_inquiry_current_promotion_en
+  - utter_menu_promotion_en
+
+## Choose menu Other Services
+* i_inquiry_other_services_en
+  - utter_menu_other_services_en
 
 
-## Challenge bot
-* i_bot_challenge
-  - utter_introduce_myself
-  - utter_menu_scope_of_services
-
-## Not satisfy with bot
-* i_not_satisfy_with_bot
-  - utter_sorry_cant_help
-  - utter_menu_to_human
+## Choose menu Download MyTelenor App
+* i_inquiry_downloap_app_en
+  - utter_app_download_link_en
 
 
-## Switch to human agent
-* i_request_live_chat
-  - utter_redirect_to_human
+## Choose menu Balance Check
+* i_inquiry_balance_check_en
+  - utter_menu_balance_check_en
 
-## Test only menu
-* i_test_menu
-  - utter_menu_scope_of_services
 
-## Download menu
-* i_download_hat_cha_laung
-  - utter_menu_game_hcl_download
+## Choose menu See Available Packs
+* i_inquiry_pack_purchase_en
+  - utter_menu_pack_purchase_en
 
-## Download from playstore
-* i_download_hat_cha_laung_playstore
-  - utter_download_hcl_playstore
 
-## Download from itunes
-* i_download_hat_cha_laung_itunes
-  - utter_download_hcl_itunes
+## Choose menu Download MyTelenor App
+* i_inquiry_downloap_app_en
+  - utter_app_download_link_en
 
-## Download from direct link
-* i_download_hat_cha_laung_direct
-  - utter_download_hcl_direct
 
-## Download from sms
-* i_download_hat_cha_laung_sms
-  - utter_download_hcl_sms
+## Choose menu Astrology
+* i_inquiry_astrology_en
+  - utter_menu_astrology_en
 
-## Download from ussd
-* i_download_hat_cha_laung_ussd
-  - utter_download_hcl_ussd
 
-## Download from qr code
-* i_download_hat_cha_laung_qr
-  - utter_download_hcl_qr
+## Choose menu USSD Code
+* i_inquiry_ussd_code_en
+  - utter_menu_ussd_code_en
+
+
+## Choose menu Roaming
+* i_inquiry_roaming_en
+  - utter_menu_roaming_en
+
+
+## Choose menu Spin & Win
+* i_inquiry_campaign_spin_and_win_en
+  - utter_menu_spin_and_win_en
+
+
+## Choose menu  sate kyite pyaw plus
+* i_inquiry_campaign_sate_kyite_pyaw_plus
+  - utter_menu_sate_kyite_pyaw_plus

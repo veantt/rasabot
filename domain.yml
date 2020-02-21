@@ -1,53 +1,50 @@
 intents:
-  - i_greet
-  - i_inquiry_hat_cha_laung_game_info
-  - i_inquiry_hat_cha_laung_game_rule
-  - i_inquiry_hat_cha_laung_game_prize
-  - i_inquiry_hat_cha_laung_winner_list
-  - i_inquiry_hat_cha_laung_period
-  - i_inquiry_hat_cha_laung_location
-  - i_inquiry_hat_cha_laung_join_instant_win
-  - i_inquiry_hat_cha_laung_join_mega_win
-  - i_inquiry_hat_cha_laung_what_instant_prize
-  - i_inquiry_hat_cha_laung_what_mega_prize
-  - i_download_hat_cha_laung
-  - i_download_hat_cha_laung_playstore
-  - i_download_hat_cha_laung_itunes
-  - i_download_hat_cha_laung_direct
-  - i_download_hat_cha_laung_sms
-  - i_download_hat_cha_laung_ussd
-  - i_download_hat_cha_laung_qr
-  - i_bot_challenge
-  - i_not_satisfy_with_bot
-  - i_request_live_chat
-  - i_test_menu
-  - i_want_more_game_hcl_info
+  - i_bot_challenge_bm
+  - i_bot_challenge_en
+  - i_greet_bm
+  - i_greet_en
+  - i_inquiry_astrology_bm
+  - i_inquiry_astrology_en
+  - i_inquiry_balance_check_bm
+  - i_inquiry_balance_check_en
+  - i_inquiry_campaign_sate_kyite_pyaw_plus
+  - i_inquiry_campaign_spin_and_win_en
+  - i_inquiry_current_promotion_bm
+  - i_inquiry_current_promotion_en
+  - i_inquiry_downloap_app_bm
+  - i_inquiry_downloap_app_en
+  - i_inquiry_other_services_en
+  - i_inquiry_pack_purchase_bm
+  - i_inquiry_pack_purchase_en
+  - i_inquiry_roaming_bm
+  - i_inquiry_roaming_en
+  - i_inquiry_self_services_en
+  - i_inquiry_ussd_code_bm
+  - i_inquiry_ussd_code_en
+  - i_not_satisfy_with_bot_bm
+  - i_not_satisfy_with_bot_en
+  - i_request_human_agent_bm
+  - i_request_human_agent_en
+  - i_use_main_menu_bm
+  - i_use_main_menu_en
 
 actions:
-  - utter_menu_scope_of_services
-  - utter_menu_game_hcl_info
-  - utter_menu_more_game_hcl_info
-  - utter_menu_game_hcl_rules
-  - utter_menu_more_game_hcl_rules
-  - utter_menu_game_hcl_prizes
-  - utter_menu_more_game_hcl_prizes
-  - utter_menu_more_game_hcl_winner
-  - utter_menu_game_hcl_download
-  - utter_greet
-  - utter_introduce_myself
-  - utter_confuse
-  - utter_sorry_cant_help
-  - utter_menu_to_human
-  - utter_redirect_to_human
-  - utter_game_hcl_period_detail
-  - utter_game_hcl_location_detail
-  - utter_download_hcl_playstore
-  - utter_download_hcl_itunes
-  - utter_download_hcl_direct
-  - utter_download_hcl_sms
-  - utter_download_hcl_ussd
-  - utter_download_hcl_qr
   - utter_default
+  - utter_app_download_link_en
+  - utter_menu_astrology_en
+  - utter_menu_balance_check_en
+  - utter_menu_choose_language
+  - utter_menu_main_menu_en
+  - utter_menu_other_services_en
+  - utter_menu_pack_purchase_en
+  - utter_menu_promotion_en
+  - utter_menu_roaming_en
+  - utter_menu_sate_kyite_pyaw_plus
+  - utter_menu_self_service_en
+  - utter_menu_spin_and_win_en
+  - utter_menu_ussd_code_en
+  - utter_welcome
+
 
 templates:
   utter_default:
@@ -62,122 +59,69 @@ templates:
       - text: "bot_fail_to_understand"
         type: "ga_event"
 
-
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_confuse:
-  - text: "WTF!"
-
-  utter_introduce_myself:
-  - text: "I'm Hat Cha Laung helper."
-
-  utter_sorry_cant_help:
-  - text: "Sorry i couldn't be more helpful :("
-
-  utter_redirect_to_human:
-  - text: "Please wait, Human agent will contact you"
-
-  utter_game_hcl_period_detail:
-  - text: "Campaign will start from 22nd Nov and will run for 70 days."
+  utter_welcome:
+  - text: "Hi there! My name is Khin Min, I will be your assistance for today. Before we proceed, please choose your preferred language below:"
     buttons:
-    - title: "Where to play"
-      payload: "/i_inquiry_hat_cha_laung_location"
-    - title: "Something else?"
-      payload: "/i_want_more_game_hcl_info"
+    - title: "English"
+      payload: "/i_use_main_menu_en"
+    - title: "Burmese"
+      payload: "/i_use_main_menu_bm"
 
-  utter_game_hcl_location_detail:
-  - text: "Hat Cha Laung lucky draw will be available exclusively on MyTelenor App (version 3.11)"
+  utter_menu_main_menu_en:
+  - text: "Hi there, welcome to the Main Menu. Please choose the following options to begin with:"
     buttons:
-    - title: "Campaign period"
-      payload: "/i_inquiry_hat_cha_laung_period"
-    - title: "Something else?"
-      payload: "/i_want_more_game_hcl_info"
+    - title: "Self-Services"
+      payload: "/i_inquiry_self_services_en"
+    - title: "Current Promotion"
+      payload: "/i_inquiry_current_promotion_en"
+    - title: "Other Services"
+      payload: "/i_inquiry_other_services_en"
+    - title: "Download MyTelenor App"
+      payload: "/i_inquiry_downloap_app_en"
 
-  utter_menu_scope_of_services:
-  - text: "Please ask your questions or select from topics below:"
+  utter_menu_self_service_en:
+  - text: "Great choice! Choose the following options:"
     buttons:
-    - title: "Game info"
-      payload: "/i_inquiry_hat_cha_laung_game_info"
-    - title: "Game rules"
-      payload: "/i_inquiry_hat_cha_laung_game_rule"
-    - title: "Game prizes"
-      payload: "/i_inquiry_hat_cha_laung_game_prize"
-    - title: "Winner list"
-      payload: "/i_inquiry_hat_cha_laung_winner_list"
+    - title: "Balance Check"
+      payload: "/i_inquiry_balance_check_en"
+    - title: "See Available Packs"
+      payload: "/i_inquiry_pack_purchase_en"
+    - title: "Download MyTelenor App"
+      payload: "/i_inquiry_downloap_app_en"
+    - title: "Back To Main Menu"
+      payload: "/i_use_main_menu_en"
 
-  utter_menu_game_hcl_info:
-  - text: "Hat Cha Laung info:"
+  utter_menu_promotion_en:
+  - text: "Here's our latest current promotions. Choose the following options:"
     buttons:
-    - title: "Campaign period"
-      payload: "/i_inquiry_hat_cha_laung_period"
-    - title: "Where to play"
-      payload: "/i_inquiry_hat_cha_laung_location"
-    - title: "Something else?"
-      payload: "/i_want_more_game_hcl_info"
+    - title: "Spin & Win"
+      payload: "/i_inquiry_campaign_spin_and_win_en"
+    - title: "sate kyite pyaw plus"
+      payload: "/i_inquiry_campaign_sate_kyite_pyaw_plus"
+    - title: "Back To Main Menu"
+      payload: "/i_use_main_menu_en"
 
-  utter_menu_more_game_hcl_info:
-  - text: "Do you want to know more?"
+  utter_menu_other_services_en:
+  - text: "Now, you can enjoy other services that we could offer. Choose the following options"
     buttons:
-    - title: "Download and play"
-      payload: "/i_download_hat_cha_laung"
-    - title: "Game rules"
-      payload: "/i_inquiry_hat_cha_laung_game_rule"
-    - title: "Game prizes"
-      payload: "/i_inquiry_hat_cha_laung_game_prize"
+    - title: "Astrology"
+      payload: "/i_inquiry_astrology_en"
+    - title: "USSD Code"
+      payload: "/i_inquiry_ussd_code_en"
+    - title: "Roaming"
+      payload: "/i_inquiry_roaming_en"
+    - title: "Back To Main Menu"
+      payload: "/i_use_main_menu_en"
 
-  utter_menu_to_human:
-  - text: "Please click button below to switch to Live Chat"
-    image: "./image/live-chat-icon-small.png"
-    buttons:
-    - title: "Switch to Live Chat"
-      payload: "/i_request_live_chat"
-    - title: "No"
-      payload: "/i_greet"
-
-  utter_menu_game_hcl_download:
-  - text: "Download and play Hat Cha Laung"
-    buttons:
-    - title: "Play Store"
-      payload: "/i_download_hat_cha_laung_playstore"
-    - title: "iTunes"
-      payload: "/i_download_hat_cha_laung_itunes"
-    - title: "Telenor website"
-      payload: "/i_download_hat_cha_laung_direct"
-    - title: "SMS"
-      payload: "/i_download_hat_cha_laung_sms"
-    - title: "USSD"
-      payload: "/i_download_hat_cha_laung_ussd"
-    - title: "QR code"
-      payload: "/i_download_hat_cha_laung_qr"
-
-  utter_download_hcl_playstore:
-  - text: "Google Play Store http://bit.ly/newmytelenor"
-
-  utter_download_hcl_itunes:
-  - text: "iTunes store http://bit.ly/newmytelenor"
-
-  utter_download_hcl_direct:
+  utter_app_download_link_en:
   - custom:
-      - text: "Direct download link (only for android)"
-      - text: "http://bit.ly/2AOHx2n"
-        type: "url"
-
-  utter_download_hcl_sms:
-  - text: "Send “APP” to 500 and get download link for free"
-
-  utter_download_hcl_ussd:
-  - custom:
-      - text: "Dial *979*5*5# and get download link for free"
-      - text: "*979*5*5#"
-        type: "tel"
-      - text: "Check balance"
-      - text: "*124#"
-        type: "tel"
-
-  utter_download_hcl_qr:
-  - text: "QR code:"
-    image: "https://www.telenor.com.mm/sites/default/files/hachalaung-qr.png"
-    buttons:
-    - title: "Play Store"
-      payload: "/i_download_hat_cha_laung_playstore"
+    - text: "Choose the following options according to your mobile operating system:"
+    - text: "Android:"
+    - text: "https://play.google.com/store/apps/details?id=mm.cws.telenor.app"
+      type: "url"
+    - text: "iOS:"
+    - text: "https://itunes.apple.com/us/app/telenor-myanmar-self-care-app/id952597596?mt=8"
+      type: "url"
+    - text: "APK:"
+    - text: "http://bit.ly/2AOHx2n"
+      type: "url"
