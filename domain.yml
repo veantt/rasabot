@@ -60,7 +60,11 @@ templates:
         type: "ga_event"
 
   utter_welcome:
-  - text: "Hi there! My name is Khin Min, I will be your assistance for today. Before we proceed, please choose your preferred language below:"
+  - text: "Hi there! My name is Khin Min, I will be your assistance for today."
+
+
+  utter_menu_choose_language:
+  - text: "Before we proceed, please choose your preferred language below:"
     buttons:
     - title: "English"
       payload: "/i_use_main_menu_en"
@@ -124,4 +128,124 @@ templates:
       type: "url"
     - text: "APK:"
     - text: "http://bit.ly/2AOHx2n"
+      type: "url"
+
+  utter_menu_balance_check_en:
+  - custom:
+    - text: "Check Your Balance here"
+    - text: "https://www.telenor.com.mm/mytelenor/?lang=en"
+      type: "url"
+
+  utter_menu_pack_purchase_en:
+  - custom:
+    - text: "Pack purchase"
+    - text: "Data Pack"
+    - text: "https://www.telenor.com.mm/en/shop"
+      type: "url"
+    - text: "Voice Pack"
+    - text: "https://www.telenor.com.mm/en/shop"
+      type: "url"
+    - text: "Facebook pack"
+    - text: "https://www.telenor.com.mm/en/shop"
+      type: "url"
+    - text: "Power Load"
+    - text: "https://www.telenor.com.mm/en/shop"
+      type: "url"
+    - text: "International"
+    - text: "https://www.telenor.com.mm/en/shop"
+      type: "url"
+
+  utter_menu_astrology_en:
+  - custom:
+    - text: "Welcome from Astrology Zone!"
+    - text: "Dial 7777 for Appointment"
+    - text: "https://www.telenor.com.mm/en/personal/astrology-zone"
+      type: "url"
+
+  utter_menu_ussd_code_en:
+  - custom:
+    - text: "Welcome to USSD code menu. Click the below menu to get the USSD code that you "
+    - text: "800 ECB"
+    - text: "*500#"
+      type: "tel"
+    - text: "PowerLoad Offers"
+    - text: "*555#"
+      type: "tel"
+    - text: "Super Htaw Offers"
+    - text: "*606#"
+      type: "tel"
+    - text: "2400 ECB"
+    - text: "*2400#"
+      type: "tel"
+    - text: "Voice Offers"
+    - text: "*666#"
+      type: "tel"
+    - text: "Data Transfer"
+    - text: "*121#"
+      type: "tel"
+    - text: "190 Onnet Mins @ 999 Kyats"
+    - text: "*7830#"
+      type: "tel"
+    - text: "110 Onnet Mins @ 599 Kyats"
+    - text: "*7810#"
+      type: "tel"
+    - text: "90 Anynet Mins @ 999 Kyats"
+    - text: "*4050#"
+      type: "tel"
+    - text: "Daily Facebook Pack"
+    - text: "*4021#"
+      type: "tel"
+    - text: "100MB 24 Hours Data"
+    - text: "*4100#"
+      type: "tel"
+    - text: "50 Onnet Mins @ 275 Kyats"
+    - text: "*7250#"
+      type: "tel"
+    - text: "Daily Unlimited SMS Pack 69 Kyats"
+    - text: "*8069#"
+      type: "tel"
+    - text: "700 MB Weekly Data @ 749 Kyats"
+    - text: "*7408#"
+      type: "tel"
+    - text: "Balance Transfer"
+    - text: "*122#"
+      type: "tel"
+    - text: "VAS Services"
+    - text: "*600#"
+      type: "tel"
+    - text: "Voice SuBoo 50 Mins"
+    - text: "*8040#"
+      type: "tel"
+    - text: "125 Onnet Mins @ 1,000 Kyats"
+    - text: "*7825#"
+      type: "tel"
+    - text: "400MB Weekly Data @ 649 Kyats"
+    - text: "*7401#"
+      type: "tel"
+    - text: "7800 Onnet Seconds  @ 700 Kyats"
+    - text: "*8100#"
+      type: "tel"
+
+  utter_menu_roaming_en:
+  - custom:
+    - text: "Stay in touch while travelling! Telenor makes it easy and affordable for you to stay connected when travelling. Checkout our roaming plan for Twelve Asian Countries and 14 Europe Countries"
+    - text: "Roaming 12 Asian Countries"
+    - text: "https://www.telenor.com.mm/en/personal/roaming"
+      type: "url"
+    - text: "Roaming 14 Europe Countries"
+    - text: "https://www.telenor.com.mm/en/personal/roaming"
+      type: "url"
+
+  utter_menu_spin_and_win_en:
+  - custom:
+    - text: "Enjoy new voice packs with the most affordable rates to talk telenor to telenor."
+    - text: "Learn More"
+    - text: "https://www.telenor.com.mm/en/offer/sate-kyite-pyaw-plus"
+      type: "url"
+
+  utter_menu_sate_kyite_pyaw_plus:
+  - custom:
+    - text: "Find out how you can SPIN and WIN a lot of instant prizes such as data MB, SMS, Handsets, Bluetooth Speakers, Power Banks and the discount coupons of Pizza Hut, City Mall Online, Cookie TV, Remax and Giodano."
+    - text: "Learn More"
+    - text: "https://www.telenor.com.mm/en/personal/spin-and-win"
       type: "url"
