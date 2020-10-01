@@ -24,6 +24,13 @@ Talk
 $ rasa shell
 $ rasa shell --debug
 
+Starts a server with your trained model
+$ rasa run
+
+Generates a visual representation of your stories
+$ rasa visualize
+ 
+
 Start server
 https://rasa.com/docs/rasa/user-guide/running-the-server/
 
